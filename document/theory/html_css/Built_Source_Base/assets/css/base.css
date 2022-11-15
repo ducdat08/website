@@ -1,0 +1,54 @@
+/*Nơi khai báo biến css*/
+:root {
+    --white--color: #fff;
+    --black--color: #000;
+    --text--color: #333;
+}
+
+/*áp dụng thuộc tính css lên toàn file css*/
+* {
+    box-sizing: inherit; /*inherit - kế thừa từ thẻ chứa nó*/ 
+}
+
+html {
+    /* font-size: 100%; --> mặc định được hiểu là 16px = 1 rem*/
+    /* font-size: 100%; */
+
+    /* thủ thuật */
+    font-size: 62.5%;   /*--> 1 rem  = 10px*/
+
+
+    /* độ cao chữ mặc định cho cả website */
+    line-height: 1.6rem;
+
+    /* phông mặc định */
+
+
+    /* kế thừa từ  --> kiến thức nâng cao
+        * {
+            box-sizing: inherit; 
+        }
+    */
+    box-sizing: border-box;
+}
+
+p {
+    /* để tạo đối tượng có chiều rộng 12px --> 1.2 rem */
+    font-size: 1.2rem;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid_full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex; /* cùng nằm trên 1 hàng ngang*/
+    flex-wrap:wrap; /*thẻ con dài hơn, sẽ nhảy xuống dòng dưới*/
+}
+

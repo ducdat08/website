@@ -1,0 +1,40 @@
+.header {
+    height: 120px;
+    /* Create color move */
+    background-image: linear-gradient(0,#fe6433, #f53e2d );
+}
+
+.header__navbar {
+    /* Move tags ul the same row */
+    display: flex;
+
+    /* Two 2 tag ul distance far together */
+    justify-content: space-between;
+}
+.header__navbar-list {
+    /* Delete dot at head tag li */
+    list-style: none;
+
+    /* Delete space front */
+    padding-left: 0;
+}
+
+/* CSS for both tag */
+.header__navbar-item,
+.header_navbar-item-link {
+    /* Move tags li the same row */
+    display: inline-block;
+
+    /* Increment size letter*/
+    font-size: 1.4rem;
+    color: var(--white--color);
+
+    /* Remove underline */
+    text-decoration: none;
+
+    font-weight: 300;
+}
+
+
+
+
